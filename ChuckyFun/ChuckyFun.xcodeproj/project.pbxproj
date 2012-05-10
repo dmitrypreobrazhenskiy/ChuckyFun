@@ -41,6 +41,8 @@
 		243C1538155C061B00A88513 /* FavoritesCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 243C1537155C061B00A88513 /* FavoritesCell.m */; };
 		243C153B155C064300A88513 /* JokesCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 243C153A155C064300A88513 /* JokesCell.m */; };
 		243C153D155C065100A88513 /* JokesCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 243C153C155C065100A88513 /* JokesCellView.xib */; };
+		243C1540155C0A4400A88513 /* CustomNameView.m in Sources */ = {isa = PBXBuildFile; fileRef = 243C153F155C0A4400A88513 /* CustomNameView.m */; };
+		243C1542155C0A5400A88513 /* CustomNameView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 243C1541155C0A5400A88513 /* CustomNameView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,6 +108,9 @@
 		243C1539155C064300A88513 /* JokesCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JokesCell.h; sourceTree = "<group>"; };
 		243C153A155C064300A88513 /* JokesCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JokesCell.m; sourceTree = "<group>"; };
 		243C153C155C065100A88513 /* JokesCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JokesCellView.xib; sourceTree = "<group>"; };
+		243C153E155C0A4400A88513 /* CustomNameView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomNameView.h; sourceTree = "<group>"; };
+		243C153F155C0A4400A88513 /* CustomNameView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomNameView.m; sourceTree = "<group>"; };
+		243C1541155C0A5400A88513 /* CustomNameView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomNameView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -289,6 +294,9 @@
 				243C1539155C064300A88513 /* JokesCell.h */,
 				243C153A155C064300A88513 /* JokesCell.m */,
 				243C153C155C065100A88513 /* JokesCellView.xib */,
+				243C153E155C0A4400A88513 /* CustomNameView.h */,
+				243C153F155C0A4400A88513 /* CustomNameView.m */,
+				243C1541155C0A5400A88513 /* CustomNameView.xib */,
 			);
 			name = "View Objects";
 			path = "en.lproj/View Objects";
@@ -375,6 +383,7 @@
 				243C152F155BDABD00A88513 /* Jokes.plist in Resources */,
 				243C1535155C05F900A88513 /* FavoritesCellView.xib in Resources */,
 				243C153D155C065100A88513 /* JokesCellView.xib in Resources */,
+				243C1542155C0A5400A88513 /* CustomNameView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,6 +433,7 @@
 				243C152D155BDA4200A88513 /* FavoritesHelper.m in Sources */,
 				243C1538155C061B00A88513 /* FavoritesCell.m in Sources */,
 				243C153B155C064300A88513 /* JokesCell.m in Sources */,
+				243C1540155C0A4400A88513 /* CustomNameView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

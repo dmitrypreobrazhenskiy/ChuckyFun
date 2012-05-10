@@ -117,9 +117,19 @@
                     <view key="view" contentMode="scaleToFill" id="W2P-Qr-BqZ">
                         <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="igF-Nd-5qt">
+                                <rect key="frame" x="5" y="9" width="310" height="350"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="UA7-BA-UMA"/>
+                    <connections>
+                        <outlet property="mainTableView" destination="igF-Nd-5qt" id="Dr2-c7-cRg"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="1742" y="-248"/>
