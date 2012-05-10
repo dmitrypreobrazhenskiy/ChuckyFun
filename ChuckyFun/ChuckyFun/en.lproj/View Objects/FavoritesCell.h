@@ -1,5 +1,5 @@
 //
-//  FavoritesViewController.h
+//  FavoritesCell.h
 //  ChuckyFun
 //
 //  Created by Dmitry Preobrazhenskiy on 10.05.12.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FavoritesViewController : UIViewController
-
-@property (weak, nonatomic) IBOutlet UITableView *mainTableView;
+@interface FavoritesCell : UITableViewCell
 
 @end

@@ -17,7 +17,7 @@
 #pragma mark - System Stuff
 #pragma mark - Delegates
 #pragma mark - System Stuff
-@synthesize topToolbar;
+
 
 
 
@@ -38,7 +38,7 @@
 
 - (void)viewDidUnload
 {
-    [self setTopToolbar:nil];
+
     [super viewDidUnload];
     
 }

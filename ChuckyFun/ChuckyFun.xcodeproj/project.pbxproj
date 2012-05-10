@@ -37,6 +37,10 @@
 		243C152A155BDA0F00A88513 /* DictionaryDefines.m in Sources */ = {isa = PBXBuildFile; fileRef = 243C1529155BDA0F00A88513 /* DictionaryDefines.m */; };
 		243C152D155BDA4200A88513 /* FavoritesHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 243C152C155BDA4200A88513 /* FavoritesHelper.m */; };
 		243C152F155BDABD00A88513 /* Jokes.plist in Resources */ = {isa = PBXBuildFile; fileRef = 243C152E155BDABD00A88513 /* Jokes.plist */; };
+		243C1535155C05F900A88513 /* FavoritesCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 243C1534155C05F900A88513 /* FavoritesCellView.xib */; };
+		243C1538155C061B00A88513 /* FavoritesCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 243C1537155C061B00A88513 /* FavoritesCell.m */; };
+		243C153B155C064300A88513 /* JokesCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 243C153A155C064300A88513 /* JokesCell.m */; };
+		243C153D155C065100A88513 /* JokesCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 243C153C155C065100A88513 /* JokesCellView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +100,12 @@
 		243C152B155BDA4200A88513 /* FavoritesHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoritesHelper.h; sourceTree = "<group>"; };
 		243C152C155BDA4200A88513 /* FavoritesHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoritesHelper.m; sourceTree = "<group>"; };
 		243C152E155BDABD00A88513 /* Jokes.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Jokes.plist; path = ../../Jokes.plist; sourceTree = "<group>"; };
+		243C1534155C05F900A88513 /* FavoritesCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FavoritesCellView.xib; sourceTree = "<group>"; };
+		243C1536155C061B00A88513 /* FavoritesCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoritesCell.h; sourceTree = "<group>"; };
+		243C1537155C061B00A88513 /* FavoritesCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoritesCell.m; sourceTree = "<group>"; };
+		243C1539155C064300A88513 /* JokesCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JokesCell.h; sourceTree = "<group>"; };
+		243C153A155C064300A88513 /* JokesCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JokesCell.m; sourceTree = "<group>"; };
+		243C153C155C065100A88513 /* JokesCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JokesCellView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				243C14F1155BCF3900A88513 /* 3rd Party */,
+				243C1530155C05C700A88513 /* View Objects */,
 				243C14F0155BCE7C00A88513 /* AdditionalControllers */,
 				243C14EF155BCE7500A88513 /* Images */,
 				243C14ED155BCE6600A88513 /* Supporting Files */,
@@ -269,6 +280,20 @@
 			path = "en.lproj/3rd Party";
 			sourceTree = "<group>";
 		};
+		243C1530155C05C700A88513 /* View Objects */ = {
+			isa = PBXGroup;
+			children = (
+				243C1536155C061B00A88513 /* FavoritesCell.h */,
+				243C1537155C061B00A88513 /* FavoritesCell.m */,
+				243C1534155C05F900A88513 /* FavoritesCellView.xib */,
+				243C1539155C064300A88513 /* JokesCell.h */,
+				243C153A155C064300A88513 /* JokesCell.m */,
+				243C153C155C065100A88513 /* JokesCellView.xib */,
+			);
+			name = "View Objects";
+			path = "en.lproj/View Objects";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -348,6 +373,8 @@
 				243C1514155BD4FC00A88513 /* Localizable.strings in Resources */,
 				243C1522155BD61900A88513 /* Settings.bundle in Resources */,
 				243C152F155BDABD00A88513 /* Jokes.plist in Resources */,
+				243C1535155C05F900A88513 /* FavoritesCellView.xib in Resources */,
+				243C153D155C065100A88513 /* JokesCellView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,6 +422,8 @@
 				243C1527155BD9FE00A88513 /* JokesHelper.m in Sources */,
 				243C152A155BDA0F00A88513 /* DictionaryDefines.m in Sources */,
 				243C152D155BDA4200A88513 /* FavoritesHelper.m in Sources */,
+				243C1538155C061B00A88513 /* FavoritesCell.m in Sources */,
+				243C153B155C064300A88513 /* JokesCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

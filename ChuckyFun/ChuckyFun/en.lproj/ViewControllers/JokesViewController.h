@@ -9,6 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface JokesViewController : UIViewController
-@property (weak, nonatomic) IBOutlet UINavigationItem *topToolbar;
 
 @end
