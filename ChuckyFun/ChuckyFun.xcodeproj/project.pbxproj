@@ -43,6 +43,9 @@
 		243C153D155C065100A88513 /* JokesCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 243C153C155C065100A88513 /* JokesCellView.xib */; };
 		243C1540155C0A4400A88513 /* CustomNameView.m in Sources */ = {isa = PBXBuildFile; fileRef = 243C153F155C0A4400A88513 /* CustomNameView.m */; };
 		243C1542155C0A5400A88513 /* CustomNameView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 243C1541155C0A5400A88513 /* CustomNameView.xib */; };
+		24B097AB155D6CEE005EDBFD /* textfield.png in Resources */ = {isa = PBXBuildFile; fileRef = 24B097A9155D6CEE005EDBFD /* textfield.png */; };
+		24B097AC155D6CEE005EDBFD /* textfield@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 24B097AA155D6CEE005EDBFD /* textfield@2x.png */; };
+		24B097B0155D6D49005EDBFD /* CustomTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 24B097AF155D6D49005EDBFD /* CustomTextField.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +114,10 @@
 		243C153E155C0A4400A88513 /* CustomNameView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomNameView.h; sourceTree = "<group>"; };
 		243C153F155C0A4400A88513 /* CustomNameView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomNameView.m; sourceTree = "<group>"; };
 		243C1541155C0A5400A88513 /* CustomNameView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomNameView.xib; sourceTree = "<group>"; };
+		24B097A9155D6CEE005EDBFD /* textfield.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = textfield.png; sourceTree = "<group>"; };
+		24B097AA155D6CEE005EDBFD /* textfield@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "textfield@2x.png"; sourceTree = "<group>"; };
+		24B097AE155D6D49005EDBFD /* CustomTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTextField.h; sourceTree = "<group>"; };
+		24B097AF155D6D49005EDBFD /* CustomTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTextField.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -252,6 +259,8 @@
 		243C14EF155BCE7500A88513 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				24B097A9155D6CEE005EDBFD /* textfield.png */,
+				24B097AA155D6CEE005EDBFD /* textfield@2x.png */,
 				243C150E155BD4D600A88513 /* main_background.png */,
 				243C150F155BD4D600A88513 /* main_background@2x.png */,
 			);
@@ -288,6 +297,8 @@
 		243C1530155C05C700A88513 /* View Objects */ = {
 			isa = PBXGroup;
 			children = (
+				24B097AE155D6D49005EDBFD /* CustomTextField.h */,
+				24B097AF155D6D49005EDBFD /* CustomTextField.m */,
 				243C1536155C061B00A88513 /* FavoritesCell.h */,
 				243C1537155C061B00A88513 /* FavoritesCell.m */,
 				243C1534155C05F900A88513 /* FavoritesCellView.xib */,
@@ -384,6 +395,8 @@
 				243C1535155C05F900A88513 /* FavoritesCellView.xib in Resources */,
 				243C153D155C065100A88513 /* JokesCellView.xib in Resources */,
 				243C1542155C0A5400A88513 /* CustomNameView.xib in Resources */,
+				24B097AB155D6CEE005EDBFD /* textfield.png in Resources */,
+				24B097AC155D6CEE005EDBFD /* textfield@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,6 +447,7 @@
 				243C1538155C061B00A88513 /* FavoritesCell.m in Sources */,
 				243C153B155C064300A88513 /* JokesCell.m in Sources */,
 				243C1540155C0A4400A88513 /* CustomNameView.m in Sources */,
+				24B097B0155D6D49005EDBFD /* CustomTextField.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

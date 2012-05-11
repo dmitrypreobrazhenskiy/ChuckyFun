@@ -7,10 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "CustomTextField.h"
 @interface CustomNameView : UIView
 @property (weak, nonatomic) IBOutlet UIToolbar *topToolbar;
-@property (weak, nonatomic) IBOutlet UITextField *nameTextField;
-@property (weak, nonatomic) IBOutlet UITextField *familyNameTextField;
+
+@property (weak, nonatomic) IBOutlet CustomTextField *nameTextField;
+@property (weak, nonatomic) IBOutlet CustomTextField *familyNameTextField;
 
 @end

@@ -10,6 +10,7 @@
 #import "JokesHelper.h"
 #import "JokesCell.h"
 #import "CustomNameView.h"
+#import "CustomTextField.h"
 
 @interface JokesViewController () <UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate, UIAlertViewDelegate, UIGestureRecognizerDelegate>
 @property(nonatomic, strong) NSMutableArray *tableViewArray;
@@ -20,7 +21,7 @@
 @property(nonatomic, strong) NSMutableString *personName;
 @property(nonatomic, strong) NSMutableString *personFamilyName;
 @property(nonatomic, strong) UITapGestureRecognizer *tapGestureRecognizer;
-@property(nonatomic, weak) UITextField *selectedTextField;
+@property(nonatomic, weak) CustomTextField *selectedTextField;
 @end
 
 @implementation JokesViewController
@@ -47,7 +48,7 @@
 
 -(void)editName {
     if (self.isCustomViewVisiable) {
-        self.isCustomViewVisiable YES;
+        self.isCustomViewVisiable = YES;
         //TODO move the view
         [self.view addGestureRecognizer:self.tapGestureRecognizer];
     }
@@ -70,7 +71,7 @@
 }
 
 -(void)textFieldDidBeginEditing:(UITextField *)textField {
-    self.selectedTextField = textField;
+    self.selectedTextField = (CustomTextField *) textField;
 }
 
 -(void)textFieldDidEndEditing:(UITextField *)textField {
@@ -79,6 +80,7 @@
 
 -(BOOL)textFieldShouldReturn:(UITextField *)textField {
     [self.view removeGestureRecognizer:[self.view.gestureRecognizers lastObject]];
+    return YES;
 }
 
 -(BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch {

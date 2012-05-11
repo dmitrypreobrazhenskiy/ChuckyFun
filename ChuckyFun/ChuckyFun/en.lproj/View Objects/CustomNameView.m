@@ -10,8 +10,8 @@
 
 @implementation CustomNameView
 @synthesize topToolbar;
-@synthesize nameTextField;
 @synthesize familyNameTextField;
+@synthesize nameTextField;
 
 - (id)initWithFrame:(CGRect)frame
 {
@@ -22,13 +22,6 @@
     return self;
 }
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect
-{
-    // Drawing code
-}
-*/
+
 
 @end
