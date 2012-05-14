@@ -36,16 +36,15 @@
 		243C1527155BD9FE00A88513 /* JokesHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 243C1526155BD9FE00A88513 /* JokesHelper.m */; };
 		243C152A155BDA0F00A88513 /* DictionaryDefines.m in Sources */ = {isa = PBXBuildFile; fileRef = 243C1529155BDA0F00A88513 /* DictionaryDefines.m */; };
 		243C152D155BDA4200A88513 /* FavoritesHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 243C152C155BDA4200A88513 /* FavoritesHelper.m */; };
-		243C152F155BDABD00A88513 /* Jokes.plist in Resources */ = {isa = PBXBuildFile; fileRef = 243C152E155BDABD00A88513 /* Jokes.plist */; };
+		243C152F155BDABD00A88513 /* Favorites.plist in Resources */ = {isa = PBXBuildFile; fileRef = 243C152E155BDABD00A88513 /* Favorites.plist */; };
 		243C1535155C05F900A88513 /* FavoritesCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 243C1534155C05F900A88513 /* FavoritesCellView.xib */; };
 		243C1538155C061B00A88513 /* FavoritesCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 243C1537155C061B00A88513 /* FavoritesCell.m */; };
 		243C153B155C064300A88513 /* JokesCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 243C153A155C064300A88513 /* JokesCell.m */; };
 		243C153D155C065100A88513 /* JokesCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 243C153C155C065100A88513 /* JokesCellView.xib */; };
-		243C1540155C0A4400A88513 /* CustomNameView.m in Sources */ = {isa = PBXBuildFile; fileRef = 243C153F155C0A4400A88513 /* CustomNameView.m */; };
-		243C1542155C0A5400A88513 /* CustomNameView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 243C1541155C0A5400A88513 /* CustomNameView.xib */; };
-		24B097AB155D6CEE005EDBFD /* textfield.png in Resources */ = {isa = PBXBuildFile; fileRef = 24B097A9155D6CEE005EDBFD /* textfield.png */; };
-		24B097AC155D6CEE005EDBFD /* textfield@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 24B097AA155D6CEE005EDBFD /* textfield@2x.png */; };
-		24B097B0155D6D49005EDBFD /* CustomTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 24B097AF155D6D49005EDBFD /* CustomTextField.m */; };
+		24B097B7155D7012005EDBFD /* SpinnerObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 24B097B6155D7011005EDBFD /* SpinnerObject.m */; };
+		24E2535815617EEC00DA4FD8 /* LoadingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E2535715617EEC00DA4FD8 /* LoadingCell.m */; };
+		24E2535B15617EFE00DA4FD8 /* LoadingCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24E2535A15617EFE00DA4FD8 /* LoadingCellView.xib */; };
+		24E2536215618BFE00DA4FD8 /* NameEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E2536115618BFD00DA4FD8 /* NameEditViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,20 +103,20 @@
 		243C1529155BDA0F00A88513 /* DictionaryDefines.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DictionaryDefines.m; sourceTree = "<group>"; };
 		243C152B155BDA4200A88513 /* FavoritesHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoritesHelper.h; sourceTree = "<group>"; };
 		243C152C155BDA4200A88513 /* FavoritesHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoritesHelper.m; sourceTree = "<group>"; };
-		243C152E155BDABD00A88513 /* Jokes.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Jokes.plist; path = ../../Jokes.plist; sourceTree = "<group>"; };
+		243C152E155BDABD00A88513 /* Favorites.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Favorites.plist; path = ../../Favorites.plist; sourceTree = "<group>"; };
 		243C1534155C05F900A88513 /* FavoritesCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FavoritesCellView.xib; sourceTree = "<group>"; };
 		243C1536155C061B00A88513 /* FavoritesCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoritesCell.h; sourceTree = "<group>"; };
 		243C1537155C061B00A88513 /* FavoritesCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoritesCell.m; sourceTree = "<group>"; };
 		243C1539155C064300A88513 /* JokesCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JokesCell.h; sourceTree = "<group>"; };
 		243C153A155C064300A88513 /* JokesCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JokesCell.m; sourceTree = "<group>"; };
 		243C153C155C065100A88513 /* JokesCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JokesCellView.xib; sourceTree = "<group>"; };
-		243C153E155C0A4400A88513 /* CustomNameView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomNameView.h; sourceTree = "<group>"; };
-		243C153F155C0A4400A88513 /* CustomNameView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomNameView.m; sourceTree = "<group>"; };
-		243C1541155C0A5400A88513 /* CustomNameView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomNameView.xib; sourceTree = "<group>"; };
-		24B097A9155D6CEE005EDBFD /* textfield.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = textfield.png; sourceTree = "<group>"; };
-		24B097AA155D6CEE005EDBFD /* textfield@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "textfield@2x.png"; sourceTree = "<group>"; };
-		24B097AE155D6D49005EDBFD /* CustomTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTextField.h; sourceTree = "<group>"; };
-		24B097AF155D6D49005EDBFD /* CustomTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTextField.m; sourceTree = "<group>"; };
+		24B097B5155D7010005EDBFD /* SpinnerObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpinnerObject.h; sourceTree = "<group>"; };
+		24B097B6155D7011005EDBFD /* SpinnerObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpinnerObject.m; sourceTree = "<group>"; };
+		24E2535615617EEC00DA4FD8 /* LoadingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingCell.h; sourceTree = "<group>"; };
+		24E2535715617EEC00DA4FD8 /* LoadingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingCell.m; sourceTree = "<group>"; };
+		24E2535A15617EFE00DA4FD8 /* LoadingCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingCellView.xib; sourceTree = "<group>"; };
+		24E2536015618BFD00DA4FD8 /* NameEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NameEditViewController.h; sourceTree = "<group>"; };
+		24E2536115618BFD00DA4FD8 /* NameEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NameEditViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -230,7 +229,7 @@
 		243C14ED155BCE6600A88513 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				243C152E155BDABD00A88513 /* Jokes.plist */,
+				243C152E155BDABD00A88513 /* Favorites.plist */,
 			);
 			name = "Supporting Files";
 			path = "en.lproj/Supporting Files";
@@ -251,6 +250,8 @@
 				243C150C155BD37500A88513 /* LoadingViewController.m */,
 				243C1518155BD55800A88513 /* FavoritesViewController.h */,
 				243C1519155BD55800A88513 /* FavoritesViewController.m */,
+				24E2536015618BFD00DA4FD8 /* NameEditViewController.h */,
+				24E2536115618BFD00DA4FD8 /* NameEditViewController.m */,
 			);
 			name = ViewControllers;
 			path = en.lproj/ViewControllers;
@@ -259,8 +260,6 @@
 		243C14EF155BCE7500A88513 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				24B097A9155D6CEE005EDBFD /* textfield.png */,
-				24B097AA155D6CEE005EDBFD /* textfield@2x.png */,
 				243C150E155BD4D600A88513 /* main_background.png */,
 				243C150F155BD4D600A88513 /* main_background@2x.png */,
 			);
@@ -297,17 +296,17 @@
 		243C1530155C05C700A88513 /* View Objects */ = {
 			isa = PBXGroup;
 			children = (
-				24B097AE155D6D49005EDBFD /* CustomTextField.h */,
-				24B097AF155D6D49005EDBFD /* CustomTextField.m */,
+				24B097B5155D7010005EDBFD /* SpinnerObject.h */,
+				24B097B6155D7011005EDBFD /* SpinnerObject.m */,
 				243C1536155C061B00A88513 /* FavoritesCell.h */,
 				243C1537155C061B00A88513 /* FavoritesCell.m */,
 				243C1534155C05F900A88513 /* FavoritesCellView.xib */,
 				243C1539155C064300A88513 /* JokesCell.h */,
 				243C153A155C064300A88513 /* JokesCell.m */,
 				243C153C155C065100A88513 /* JokesCellView.xib */,
-				243C153E155C0A4400A88513 /* CustomNameView.h */,
-				243C153F155C0A4400A88513 /* CustomNameView.m */,
-				243C1541155C0A5400A88513 /* CustomNameView.xib */,
+				24E2535615617EEC00DA4FD8 /* LoadingCell.h */,
+				24E2535715617EEC00DA4FD8 /* LoadingCell.m */,
+				24E2535A15617EFE00DA4FD8 /* LoadingCellView.xib */,
 			);
 			name = "View Objects";
 			path = "en.lproj/View Objects";
@@ -391,12 +390,10 @@
 				243C1511155BD4D600A88513 /* main_background@2x.png in Resources */,
 				243C1514155BD4FC00A88513 /* Localizable.strings in Resources */,
 				243C1522155BD61900A88513 /* Settings.bundle in Resources */,
-				243C152F155BDABD00A88513 /* Jokes.plist in Resources */,
+				243C152F155BDABD00A88513 /* Favorites.plist in Resources */,
 				243C1535155C05F900A88513 /* FavoritesCellView.xib in Resources */,
 				243C153D155C065100A88513 /* JokesCellView.xib in Resources */,
-				243C1542155C0A5400A88513 /* CustomNameView.xib in Resources */,
-				24B097AB155D6CEE005EDBFD /* textfield.png in Resources */,
-				24B097AC155D6CEE005EDBFD /* textfield@2x.png in Resources */,
+				24E2535B15617EFE00DA4FD8 /* LoadingCellView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,8 +443,9 @@
 				243C152D155BDA4200A88513 /* FavoritesHelper.m in Sources */,
 				243C1538155C061B00A88513 /* FavoritesCell.m in Sources */,
 				243C153B155C064300A88513 /* JokesCell.m in Sources */,
-				243C1540155C0A4400A88513 /* CustomNameView.m in Sources */,
-				24B097B0155D6D49005EDBFD /* CustomTextField.m in Sources */,
+				24B097B7155D7012005EDBFD /* SpinnerObject.m in Sources */,
+				24E2535815617EEC00DA4FD8 /* LoadingCell.m in Sources */,
+				24E2536215618BFE00DA4FD8 /* NameEditViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,5 +10,10 @@
 #import "DictionaryDefines.h"
 
 @interface JokesHelper : NSObject
+@property(nonatomic, strong) NSString *rootPath;
+@property(nonatomic, strong) NSString *plistPath;
+-(void)initiateJokesDownload;
 
+
+-(void)initiateJokesDownloadWithPersonName:(NSString *)personName andPersonFamilyName:(NSString *)personFamilyName;
 @end

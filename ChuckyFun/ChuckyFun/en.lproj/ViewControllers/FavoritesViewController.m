@@ -54,7 +54,7 @@
 }
 #pragma mark - Delegates
 
-#define CELLHEIGHT 52
+#define CELLHEIGHT 75
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return CELLHEIGHT;
 }
@@ -69,6 +69,7 @@
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    NSDictionary *jokesDictionary = [self.tableViewArray objectAtIndex:indexPath.row];
     static NSString *favoritesCellIdentifier = @"FavoritesCellIdentifier";
     FavoritesCell *favoritesCell = [tableView dequeueReusableCellWithIdentifier:favoritesCellIdentifier];
     if (favoritesCell == nil) {
@@ -81,6 +82,13 @@
         }
     }
     favoritesCell.selectionStyle = UITableViewCellSelectionStyleNone;
+    NSString *joke = [jokesDictionary objectForKey:@"joke"];
+    NSString *jokesCorrected = [joke stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    if (jokesCorrected != nil) {
+        if (![jokesCorrected isEqualToString:@""]) {
+            favoritesCell.favoriteLabel.text = jokesCorrected;
+        }
+    }
     return favoritesCell;
 }
 

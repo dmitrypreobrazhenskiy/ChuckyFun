@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-
 @interface JokesViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UITableView *mainTableView;
 

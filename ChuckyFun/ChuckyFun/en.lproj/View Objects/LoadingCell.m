@@ -1,15 +1,15 @@
 //
-//  JokesCell.m
+//  LoadingCell.m
 //  ChuckyFun
 //
-//  Created by Dmitry Preobrazhenskiy on 10.05.12.
+//  Created by Dmitry Preobrazhenskiy on 14.05.12.
 //  Copyright (c) 2012 TTU. All rights reserved.
 //
 
-#import "JokesCell.h"
+#import "LoadingCell.h"
 
-@implementation JokesCell
-@synthesize jokesLabel;
+@implementation LoadingCell
+@synthesize loadLabel;
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {

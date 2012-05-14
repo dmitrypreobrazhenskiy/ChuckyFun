@@ -9,6 +9,7 @@
 #import "FavoritesCell.h"
 
 @implementation FavoritesCell
+@synthesize favoriteLabel;
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {

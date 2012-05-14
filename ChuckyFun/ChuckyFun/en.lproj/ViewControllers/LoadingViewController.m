@@ -9,15 +9,19 @@
 #import "LoadingViewController.h"
 #import "Reachability.h"
 #import "CustomTabBarController.h"
+#import "JokesHelper.h"
+
 
 
 @interface LoadingViewController () <UIAlertViewDelegate> {
+    JokesHelper *jokesHelper;
     Reachability *internetReachability;
     Reachability *hostReachability;
     BOOL isInternetActive;
     BOOL isHostReachable;
 }
 
+@property(nonatomic, strong) JokesHelper *jokersHelper;
 @property(nonatomic, strong) Reachability *internetReachability;
 @property(nonatomic, strong) Reachability *hostReachability;
 @property(nonatomic) BOOL isInternetActive;
@@ -28,6 +32,7 @@
 @implementation LoadingViewController
 @synthesize loadingActivityIndicator = _loadingActivityIndicator;
 @synthesize loadingLabel = _loadingLabel;
+@synthesize jokersHelper = _jokersHelper;
 
 
 //Reachability
@@ -38,6 +43,11 @@
 
 #pragma mark - Methods
 
+-(void)procceesWithMainScreen:(NSNotification *)notification {
+    if ([notification.name isEqualToString:@"JokesParsed"]) {
+        [self showTabBar];
+    }
+}
 
 -(void)showTabBar {
     [self.loadingActivityIndicator stopAnimating];
@@ -107,7 +117,8 @@
 - (void)startLoading {
     
     if (self.isHostReachable & self.isInternetActive) {
-        [self showTabBar];
+        self.jokersHelper = [[JokesHelper alloc] init];
+        [self.jokersHelper initiateJokesDownload];
     }
     else {
         //TODO check why the connection didFailWithError
@@ -133,7 +144,6 @@
 
 #pragma mark - System Stuff
 
-
 -(void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:YES];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(checkNetworkStatus:) name:kReachabilityChangedNotification object:nil];
@@ -153,11 +163,19 @@
     [self performSelector:@selector(startLoading) withObject:nil afterDelay:1];
 }
 
+
+-(void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:YES];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(procceesWithMainScreen:) name:@"JokesParsed" object:nil];
+}
+
 -(void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:YES];
     [[NSNotificationCenter defaultCenter] removeObserver:self name:kReachabilityChangedNotification object:nil];
     [self.internetReachability stopNotifier];
     [self.hostReachability stopNotifier];
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:@"JokesParsed" object:nil];
+    self.jokersHelper = nil;
 }
 
 -(void)viewDidUnload {

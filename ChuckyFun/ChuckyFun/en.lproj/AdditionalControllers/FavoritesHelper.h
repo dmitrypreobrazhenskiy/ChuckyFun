@@ -1,11 +1,10 @@
 //
-//  FavoritesHelper.h
-//  Saloninfra
+//  FavoritesCell.h
+//  ChuckyFun
 //
-//  Created by Dmitry Preobrazhenskiy on 04.05.12.
+//  Created by Dmitry Preobrazhenskiy on 10.05.12.
 //  Copyright (c) 2012 TTU. All rights reserved.
 //
-
 #import <Foundation/Foundation.h>
 #import "DictionaryDefines.h"
 
@@ -14,7 +13,7 @@
 @property(nonatomic, strong) NSString *rootPath;
 @property(nonatomic, strong) NSMutableArray *jokesArray;
 
-- (void)addToFavorites:(NSMutableDictionary *)jokesDictionary;
+- (void)addToFavorites:(NSDictionary *)jokesDictionary;
 
-- (void)removeFromFavorites:(NSMutableDictionary *)jokesDictionary;
+- (void)removeFromFavorites:(NSDictionary *)jokesDictionary;
 @end

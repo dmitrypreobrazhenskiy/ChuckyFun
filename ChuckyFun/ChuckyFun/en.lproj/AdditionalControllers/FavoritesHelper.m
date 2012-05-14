@@ -20,11 +20,11 @@
         NSString *plistPath;
         NSString *rootPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,
                                                                   NSUserDomainMask, YES) objectAtIndex:0];
-        plistPath = [rootPath stringByAppendingPathComponent:@"Jokes.plist"];
+        plistPath = [rootPath stringByAppendingPathComponent:@"Favorites.plist"];
         NSFileManager *fileManager = [NSFileManager defaultManager];
         if (![fileManager fileExistsAtPath:plistPath]) {
             NSError *error;
-            NSString *bundle = [[NSBundle mainBundle] pathForResource:@"Jokes" ofType:@"plist"];
+            NSString *bundle = [[NSBundle mainBundle] pathForResource:@"Favorites" ofType:@"plist"];
             [fileManager copyItemAtPath:bundle toPath:plistPath error:&error];
         }
         
@@ -36,7 +36,7 @@
     return self;
 }
 
-- (void)addToFavorites:(NSMutableDictionary *)jokesDictionary {
+- (void)addToFavorites:(NSDictionary *)jokesDictionary {
     NSMutableArray *plistArray = [[NSMutableArray alloc] initWithContentsOfFile:self.plistPath];
     if ([plistArray count] > 0) {
         self.jokesArray = [[NSMutableArray alloc] initWithArray:plistArray];
@@ -55,7 +55,7 @@
     }
 }
 
-- (void)removeFromFavorites:(NSMutableDictionary *)jokesDictionary {
+- (void)removeFromFavorites:(NSDictionary *)jokesDictionary {
     NSMutableArray *plistArray = [[NSMutableArray alloc] initWithContentsOfFile:self.plistPath];
     if ([plistArray count] > 0) {
         self.jokesArray = [[NSMutableArray alloc] initWithArray:plistArray];
