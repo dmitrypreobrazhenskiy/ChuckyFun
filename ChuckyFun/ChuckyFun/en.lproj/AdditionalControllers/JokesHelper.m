@@ -81,6 +81,10 @@
                 [[NSNotificationCenter defaultCenter] postNotificationName:@"JokesParsed" object:nil]; 
             }
         }
+        else {
+                [resultsDictionary writeToFile:self.plistPath atomically:YES];
+                [[NSNotificationCenter defaultCenter] postNotificationName:@"JokesParsed" object:nil]; 
+        }
     }
     else {
         [[NSNotificationCenter defaultCenter] postNotificationName:@"JokesParsingFailed" object:nil];
@@ -98,16 +102,51 @@
     NSError *error;
     NSData *returnData = [ NSURLConnection sendSynchronousRequest: connectionRequest returningResponse:&response error:&error];
     if (returnData != nil) {
-        NSString *content = [NSString stringWithUTF8String:[returnData bytes]];
-        NSLog(@"responseData: %@", content);
+        //NSString *content = [NSString stringWithUTF8String:[returnData bytes]];
+        //NSLog(@"responseData: %@", content);
         NSDictionary *resultsDictionary = [returnData objectFromJSONData];
-        NSLog(@"result dictionary is %@", resultsDictionary);
-        [resultsDictionary writeToFile:self.plistPath atomically:NO];
-        [[NSNotificationCenter defaultCenter] postNotificationName:@"JokesParsed" object:nil];
+        //NSLog(@"result dictionary is %@", resultsDictionary);
+        NSMutableArray *newJokesArray = [[NSMutableArray alloc] init];
+        NSMutableArray *resultArray = [resultsDictionary objectForKey:@"value"];
+        
+        if (self.currentJokesDictionary != nil) {
+            NSMutableArray *currentJokesArray = [self.currentJokesDictionary objectForKey:@"value"];
+            if (currentJokesArray != nil) {
+                for (NSDictionary *newDictionary in resultArray) {
+                    if (![currentJokesArray containsObject:newDictionary]) {
+                        [newJokesArray addObject:newDictionary];
+                    }
+                    else {
+                        NSLog(@"%@", newDictionary);
+                    }
+                }
+                if ([newJokesArray count] > 0 ) {
+                    if (self.currentJokesDictionary != nil) {
+                        NSMutableArray *currentJokesArray = [self.currentJokesDictionary objectForKey:@"value"];
+                        [currentJokesArray addObjectsFromArray:newJokesArray];
+                        [self.currentJokesDictionary writeToFile:self.plistPath atomically:NO];
+                    }
+                    else {
+                        [self.currentJokesDictionary writeToFile:self.plistPath atomically:NO];
+                    }
+                    
+                }
+                [[NSNotificationCenter defaultCenter] postNotificationName:@"JokesParsed" object:nil]; 
+            }
+            else {
+                [resultsDictionary writeToFile:self.plistPath atomically:YES];
+                [[NSNotificationCenter defaultCenter] postNotificationName:@"JokesParsed" object:nil]; 
+            }
+        }
+        else {
+            [resultsDictionary writeToFile:self.plistPath atomically:YES];
+            [[NSNotificationCenter defaultCenter] postNotificationName:@"JokesParsed" object:nil]; 
+        }
     }
     else {
         [[NSNotificationCenter defaultCenter] postNotificationName:@"JokesParsingFailed" object:nil];
     }
+
     
 }
 

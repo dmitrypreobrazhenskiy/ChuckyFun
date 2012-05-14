@@ -43,6 +43,15 @@
 
 #pragma mark - Methods
 
+-(void)procceesWithOfflineScreen:(NSNotification *)notification {
+    if ([notification.name isEqualToString:@"JokesParsingFailed"]) {
+        NSString *acceptString = NSLocalizedString(@"AcceptButtonTitle", @"The ok button title");
+        NSString *errorMessage = NSLocalizedString(@"ConnectionError", @"the connection error button title");
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"" message:errorMessage delegate:self cancelButtonTitle:acceptString otherButtonTitles:nil];
+        [alertView show];
+    }
+}
+
 -(void)procceesWithMainScreen:(NSNotification *)notification {
     if ([notification.name isEqualToString:@"JokesParsed"]) {
         [self showTabBar];
@@ -167,6 +176,7 @@
 -(void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:YES];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(procceesWithMainScreen:) name:@"JokesParsed" object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(procceesWithOfflineScreen:) name:@"JokesParsingFailed" object:nil];
 }
 
 -(void)viewWillDisappear:(BOOL)animated {
@@ -175,6 +185,7 @@
     [self.internetReachability stopNotifier];
     [self.hostReachability stopNotifier];
     [[NSNotificationCenter defaultCenter] removeObserver:self name:@"JokesParsed" object:nil];
+     [[NSNotificationCenter defaultCenter] removeObserver:self name:@"JokesParsingFailed" object:nil];
     self.jokersHelper = nil;
 }
 

@@ -5,3 +5,75 @@
   Created by Dmitry Preobrazhenskiy on 10.05.12.
   Copyright (c) 2012 TTU. All rights reserved.
 */
+
+/* The ok button title */
+"AcceptButtonTitle" = "Ok";
+
+/* the title of the button to add the joke to favorites */
+"AlertAccept" = "Add";
+
+/* the title of the button not to add the joke to favorites */
+"AlertCancel" = "Cancel";
+
+/* the title of the button not to retry the parsing */
+"AlertContinue" = "Cancel";
+
+/* the title of the button to retry the parsing */
+"AlertyRetry" = "Retry";
+
+/* the cancel button title */
+"CancelButtonTitle" = "Cancel";
+
+/* the title for the button that checks connection */
+"CheckConnectionButton" = "Check for the connection?";
+
+/* the name of the button that clears all the jokes */
+"ClearNameButtonTitle" = "Clear";
+
+/* the connection error button title */
+"ConnectionError" = "Connection Error";
+
+/* The edit button which triggers the editing */
+"EditButtonTitle" = "Edit";
+
+/* the name of the button that lets changing the name */
+"EditNameButtonTitle" = "Edit name";
+
+/* the message to alert the user that the jokes could not be parsed */
+"FailedMessage" = "The parsing of jokes failed";
+
+/* family name placeholder text */
+"FamilyNameTextField" = "Last Name";
+
+/* The tab name of favorites page */
+"Favorites" = "Favorites";
+
+/* The message body of the favorites alert */
+"FavoritesMessage" = "Add joke to favorites?";
+
+/* The finish button to leave the editing mode */
+"FinishButtonTitle" = "Finish";
+
+/* The tab name of jokes page */
+"Jokes" = "Jokes";
+
+/* The text for the loading label */
+"LoadingCellText" = "Load more jokes...";
+
+/* the text of the loading button */
+"LoadingLabelText" = "Loading...Please wait";
+
+/* name placeholder text */
+"NameTextField" = "First Name";
+
+/* the normal no */
+"No" = "No";
+
+/* The message that appears when sucessfully connected */
+"SuccessMesaageOfConnection" = "Then internet is active, proceed?";
+
+/* the normal yes */
+"Yes" = "Yes";
+
+
+

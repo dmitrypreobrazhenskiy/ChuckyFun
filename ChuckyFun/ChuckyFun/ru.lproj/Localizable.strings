@@ -5,3 +5,75 @@
   Created by Dmitry Preobrazhenskiy on 10.05.12.
   Copyright (c) 2012 TTU. All rights reserved.
 */
+
+/* The ok button title */
+"AcceptButtonTitle" = "Ок";
+
+/* the title of the button to add the joke to favorites */
+"AlertAccept" = "Добавить";
+
+/* the title of the button not to add the joke to favorites */
+"AlertCancel" = "Отмена";
+
+/* the title of the button not to retry the parsing */
+"AlertContinue" = "Отмена";
+
+/* the title of the button to retry the parsing */
+"AlertyRetry" = "Повторить";
+
+/* the cancel button title */
+"CancelButtonTitle" = "Отмена";
+
+/* the title for the button that checks connection */
+"CheckConnectionButton" = "Проверить соединение?";
+
+/* the name of the button that clears all the jokes */
+"ClearNameButtonTitle" = "Очистить";
+
+/* the connection error button title */
+"ConnectionError" = "Соединение не установлено";
+
+/* The edit button which triggers the editing */
+"EditButtonTitle" = "Изменить";
+
+/* the name of the button that lets changing the name */
+"EditNameButtonTitle" = "Изменить имя";
+
+/* the message to alert the user that the jokes could not be parsed */
+"FailedMessage" = "Не удалось загрузить шутки...";
+
+/* family name placeholder text */
+"FamilyNameTextField" = "Фамилия";
+
+/* The tab name of favorites page */
+"Favorites" = "Избранное";
+
+/* The message body of the favorites alert */
+"FavoritesMessage" = "Добавить шутку в избранное?";
+
+/* The finish button to leave the editing mode */
+"FinishButtonTitle" = "Завершить";
+
+/* The tab name of jokes page */
+"Jokes" = "Шутки";
+
+/* The text for the loading label */
+"LoadingCellText" = "Загрузить ещё шутки";
+
+/* the text of the loading button */
+"LoadingLabelText" = "Загружаю...подождите";
+
+/* name placeholder text */
+"NameTextField" = "Имя";
+
+/* the normal no */
+"No" = "Нет";
+
+/* The message that appears when sucessfully connected */
+"SuccessMesaageOfConnection" = "Соединение установлено, продолжить?";
+
+/* the normal yes */
+"Yes" = "Да";
+
+
+
