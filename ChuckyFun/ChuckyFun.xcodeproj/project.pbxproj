@@ -45,6 +45,8 @@
 		24E2535815617EEC00DA4FD8 /* LoadingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E2535715617EEC00DA4FD8 /* LoadingCell.m */; };
 		24E2535B15617EFE00DA4FD8 /* LoadingCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24E2535A15617EFE00DA4FD8 /* LoadingCellView.xib */; };
 		24E2536215618BFE00DA4FD8 /* NameEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E2536115618BFD00DA4FD8 /* NameEditViewController.m */; };
+		24E2536B1561A2B100DA4FD8 /* GTMNSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E253681561A2B100DA4FD8 /* GTMNSString+HTML.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		24E2536C1561A2B100DA4FD8 /* NSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E2536A1561A2B100DA4FD8 /* NSString+HTML.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,6 +119,10 @@
 		24E2535A15617EFE00DA4FD8 /* LoadingCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingCellView.xib; sourceTree = "<group>"; };
 		24E2536015618BFD00DA4FD8 /* NameEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NameEditViewController.h; sourceTree = "<group>"; };
 		24E2536115618BFD00DA4FD8 /* NameEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NameEditViewController.m; sourceTree = "<group>"; };
+		24E253671561A2B100DA4FD8 /* GTMNSString+HTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GTMNSString+HTML.h"; sourceTree = "<group>"; };
+		24E253681561A2B100DA4FD8 /* GTMNSString+HTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GTMNSString+HTML.m"; sourceTree = "<group>"; };
+		24E253691561A2B100DA4FD8 /* NSString+HTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+HTML.h"; sourceTree = "<group>"; };
+		24E2536A1561A2B100DA4FD8 /* NSString+HTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+HTML.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -284,6 +290,10 @@
 		243C14F1155BCF3900A88513 /* 3rd Party */ = {
 			isa = PBXGroup;
 			children = (
+				24E253671561A2B100DA4FD8 /* GTMNSString+HTML.h */,
+				24E253681561A2B100DA4FD8 /* GTMNSString+HTML.m */,
+				24E253691561A2B100DA4FD8 /* NSString+HTML.h */,
+				24E2536A1561A2B100DA4FD8 /* NSString+HTML.m */,
 				243C14F5155BCF7D00A88513 /* Reachability.h */,
 				243C14F6155BCF7D00A88513 /* Reachability.m */,
 				243C14F2155BCF5500A88513 /* JSONKit.h */,
@@ -446,6 +456,8 @@
 				24B097B7155D7012005EDBFD /* SpinnerObject.m in Sources */,
 				24E2535815617EEC00DA4FD8 /* LoadingCell.m in Sources */,
 				24E2536215618BFE00DA4FD8 /* NameEditViewController.m in Sources */,
+				24E2536B1561A2B100DA4FD8 /* GTMNSString+HTML.m in Sources */,
+				24E2536C1561A2B100DA4FD8 /* NSString+HTML.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

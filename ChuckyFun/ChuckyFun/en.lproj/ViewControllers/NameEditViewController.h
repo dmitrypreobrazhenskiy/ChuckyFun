@@ -10,7 +10,7 @@
 @class NameEditViewController;
 @protocol NameViewControllerDelegate
 @required
--(void)nameEditViewController:(NameEditViewController *)sender didEnterFirstName:(NSString *)firstName andLastName:(NSString *)lastName;
+-(void)nameEditViewController:(NameEditViewController *)sender didEnterFirstName:(NSString *)firstName andLastName:(NSString *)lastName andIsNamePresent:(BOOL)isCustomNamePresent;
 
 @end
 

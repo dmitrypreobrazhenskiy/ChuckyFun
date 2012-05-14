@@ -71,13 +71,14 @@
 -(void)acceptNameSelection {
     if ((self.personName != nil) & (self.personFamilyName != nil)) {
         if ((![self.personName isEqualToString:@""]) & (![self.personFamilyName isEqualToString:@""])) {
-            [self.delegate nameEditViewController:self didEnterFirstName:self.personName andLastName:self.personFamilyName];
+            [self.delegate nameEditViewController:self didEnterFirstName:self.personName andLastName:self.personFamilyName andIsNamePresent:YES];
              [self.navigationController popViewControllerAnimated:YES];
         }
     }
 }
 
 -(void)cancelNameSelection {
+    [self.delegate nameEditViewController:self didEnterFirstName:@"" andLastName:@"" andIsNamePresent:NO];
     [self.navigationController popViewControllerAnimated:YES];
 }
 

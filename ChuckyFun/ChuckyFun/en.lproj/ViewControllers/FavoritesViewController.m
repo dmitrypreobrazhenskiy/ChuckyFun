@@ -9,6 +9,7 @@
 #import "FavoritesViewController.h"
 #import "FavoritesHelper.h"
 #import "FavoritesCell.h"
+#import "NSString+HTML.h"
 
 @interface FavoritesViewController () <UITableViewDelegate, UITableViewDataSource>
 @property(nonatomic, strong) FavoritesHelper *favoritesHelper;
@@ -83,7 +84,7 @@
     }
     favoritesCell.selectionStyle = UITableViewCellSelectionStyleNone;
     NSString *joke = [jokesDictionary objectForKey:@"joke"];
-    NSString *jokesCorrected = [joke stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    NSString *jokesCorrected = [joke stringByDecodingHTMLEntities];
     if (jokesCorrected != nil) {
         if (![jokesCorrected isEqualToString:@""]) {
             favoritesCell.favoriteLabel.text = jokesCorrected;

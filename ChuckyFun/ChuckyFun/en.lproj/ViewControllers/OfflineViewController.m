@@ -150,6 +150,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"main_background.png"]];
+    NSString *checkButtonTiile = NSLocalizedString(@"CheckConnectionButton", @"the title for the button that checks connection");
+    [self.checkConnectionButton setTitle:checkButtonTiile forState:UIControlStateNormal];
+    [self.checkConnectionButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     self.isHostReachable = NO;
     self.isInternetActive = NO;
     
