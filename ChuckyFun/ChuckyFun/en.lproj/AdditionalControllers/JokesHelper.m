@@ -82,8 +82,8 @@
             }
         }
         else {
-                [resultsDictionary writeToFile:self.plistPath atomically:YES];
-                [[NSNotificationCenter defaultCenter] postNotificationName:@"JokesParsed" object:nil]; 
+            [resultsDictionary writeToFile:self.plistPath atomically:YES];
+            [[NSNotificationCenter defaultCenter] postNotificationName:@"JokesParsed" object:nil]; 
         }
     }
     else {
@@ -146,7 +146,7 @@
     else {
         [[NSNotificationCenter defaultCenter] postNotificationName:@"JokesParsingFailed" object:nil];
     }
-
+    
     
 }
 

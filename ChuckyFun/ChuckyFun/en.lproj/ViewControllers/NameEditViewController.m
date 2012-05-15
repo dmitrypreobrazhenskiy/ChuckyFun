@@ -72,7 +72,7 @@
     if ((self.personName != nil) & (self.personFamilyName != nil)) {
         if ((![self.personName isEqualToString:@""]) & (![self.personFamilyName isEqualToString:@""])) {
             [self.delegate nameEditViewController:self didEnterFirstName:self.personName andLastName:self.personFamilyName andIsNamePresent:YES];
-             [self.navigationController popViewControllerAnimated:YES];
+            [self.navigationController popViewControllerAnimated:YES];
         }
     }
 }
@@ -162,32 +162,32 @@
 - (void)viewDidLoad
 {
     
-        self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"main_background.png"]];
-        //Load the name View
-        NSString *acceptString = NSLocalizedString(@"AcceptButtonTitle", @"The ok button title");
-        NSString *cancelString = NSLocalizedString(@"CancelButtonTitle", @"the cancel button title");
-       
-        NSString *nameString = NSLocalizedString(@"NameTextField", @"name placeholder text");
-        NSString *familyNameString = NSLocalizedString(@"FamilyNameTextField", @"family name placeholder text");
+    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"main_background.png"]];
+    //Load the name View
+    NSString *acceptString = NSLocalizedString(@"AcceptButtonTitle", @"The ok button title");
+    NSString *cancelString = NSLocalizedString(@"CancelButtonTitle", @"the cancel button title");
     
-        self.nameTextField.placeholder = nameString;
-        self.familyNameTextField.placeholder = familyNameString;
-        
-        self.nameTextField.delegate = self;
-        self.familyNameTextField.delegate = self;
+    NSString *nameString = NSLocalizedString(@"NameTextField", @"name placeholder text");
+    NSString *familyNameString = NSLocalizedString(@"FamilyNameTextField", @"family name placeholder text");
+    
+    self.nameTextField.placeholder = nameString;
+    self.familyNameTextField.placeholder = familyNameString;
+    
+    self.nameTextField.delegate = self;
+    self.familyNameTextField.delegate = self;
     
     
-        self.nameTextField.alpha = 0;
-        self.familyNameTextField.alpha = 0;
-        self.movableView.backgroundColor = [UIColor clearColor];
-        UIBarButtonItem *cancelBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:cancelString style:UIBarButtonItemStyleDone target:self action:@selector(cancelNameSelection)];
-        UIBarButtonItem *acceptDateBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:acceptString style:
-                                                    UIBarButtonItemStyleDone target:self action:@selector(acceptNameSelection)];
-        UIBarButtonItem *flexibleWidth = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
-       NSArray *buttonArray = [NSArray arrayWithObjects:cancelBarButtonItem, flexibleWidth,acceptDateBarButtonItem, nil];
-       [self.topToolbar setItems:buttonArray animated:NO];
-      self.tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(removeTheKeyboard)];
-        self.isMovableViewMoved = NO;
+    self.nameTextField.alpha = 0;
+    self.familyNameTextField.alpha = 0;
+    self.movableView.backgroundColor = [UIColor clearColor];
+    UIBarButtonItem *cancelBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:cancelString style:UIBarButtonItemStyleDone target:self action:@selector(cancelNameSelection)];
+    UIBarButtonItem *acceptDateBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:acceptString style:
+                                                UIBarButtonItemStyleDone target:self action:@selector(acceptNameSelection)];
+    UIBarButtonItem *flexibleWidth = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
+    NSArray *buttonArray = [NSArray arrayWithObjects:cancelBarButtonItem, flexibleWidth,acceptDateBarButtonItem, nil];
+    [self.topToolbar setItems:buttonArray animated:NO];
+    self.tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(removeTheKeyboard)];
+    self.isMovableViewMoved = NO;
     //Finished loading the view
     [super viewDidLoad];
 	

@@ -6,7 +6,7 @@
 //  Copyright (c) 2012 TTU. All rights reserved.
 //
 #import <Foundation/Foundation.h>
-#import "DictionaryDefines.h"
+
 
 @interface FavoritesHelper : NSObject
 @property(nonatomic, strong) NSString *plistPath;

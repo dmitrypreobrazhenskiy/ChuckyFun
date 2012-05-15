@@ -30,7 +30,7 @@
     NSString *favoritesTabName = NSLocalizedString(@"Favorites", @"The tab name of favorites page");
     UITabBarItem *favoritesTab = [[UITabBarItem alloc] initWithTitle:favoritesTabName image:nil tag:1]; 
     fvc.tabBarItem = favoritesTab;
-
+    
 }
 
 - (void)viewDidUnload

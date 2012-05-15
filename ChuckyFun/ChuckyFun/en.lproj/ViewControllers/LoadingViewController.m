@@ -185,7 +185,7 @@
     [self.internetReachability stopNotifier];
     [self.hostReachability stopNotifier];
     [[NSNotificationCenter defaultCenter] removeObserver:self name:@"JokesParsed" object:nil];
-     [[NSNotificationCenter defaultCenter] removeObserver:self name:@"JokesParsingFailed" object:nil];
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:@"JokesParsingFailed" object:nil];
     self.jokersHelper = nil;
 }
 

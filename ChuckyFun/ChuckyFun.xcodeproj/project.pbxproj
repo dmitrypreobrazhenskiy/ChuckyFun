@@ -24,7 +24,6 @@
 		243C14FE155BD09600A88513 /* OfflineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 243C14FD155BD09600A88513 /* OfflineViewController.m */; };
 		243C1504155BD16000A88513 /* JokesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 243C1503155BD16000A88513 /* JokesViewController.m */; };
 		243C1507155BD18100A88513 /* CustomTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 243C1506155BD18100A88513 /* CustomTabBarController.m */; };
-		243C150A155BD1CB00A88513 /* TempViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 243C1509155BD1CB00A88513 /* TempViewController.m */; };
 		243C150D155BD37600A88513 /* LoadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 243C150C155BD37500A88513 /* LoadingViewController.m */; };
 		243C1510155BD4D600A88513 /* main_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 243C150E155BD4D600A88513 /* main_background.png */; };
 		243C1511155BD4D600A88513 /* main_background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 243C150F155BD4D600A88513 /* main_background@2x.png */; };
@@ -34,7 +33,6 @@
 		243C1520155BD60B00A88513 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 243C151E155BD60000A88513 /* QuartzCore.framework */; };
 		243C1522155BD61900A88513 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 243C1521155BD61900A88513 /* Settings.bundle */; };
 		243C1527155BD9FE00A88513 /* JokesHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 243C1526155BD9FE00A88513 /* JokesHelper.m */; };
-		243C152A155BDA0F00A88513 /* DictionaryDefines.m in Sources */ = {isa = PBXBuildFile; fileRef = 243C1529155BDA0F00A88513 /* DictionaryDefines.m */; };
 		243C152D155BDA4200A88513 /* FavoritesHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 243C152C155BDA4200A88513 /* FavoritesHelper.m */; };
 		243C152F155BDABD00A88513 /* Favorites.plist in Resources */ = {isa = PBXBuildFile; fileRef = 243C152E155BDABD00A88513 /* Favorites.plist */; };
 		243C1535155C05F900A88513 /* FavoritesCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 243C1534155C05F900A88513 /* FavoritesCellView.xib */; };
@@ -87,8 +85,6 @@
 		243C1503155BD16000A88513 /* JokesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JokesViewController.m; sourceTree = "<group>"; };
 		243C1505155BD18100A88513 /* CustomTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTabBarController.h; sourceTree = "<group>"; };
 		243C1506155BD18100A88513 /* CustomTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTabBarController.m; sourceTree = "<group>"; };
-		243C1508155BD1CB00A88513 /* TempViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TempViewController.h; sourceTree = "<group>"; };
-		243C1509155BD1CB00A88513 /* TempViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TempViewController.m; sourceTree = "<group>"; };
 		243C150B155BD37500A88513 /* LoadingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingViewController.h; sourceTree = "<group>"; };
 		243C150C155BD37500A88513 /* LoadingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingViewController.m; sourceTree = "<group>"; };
 		243C150E155BD4D600A88513 /* main_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = main_background.png; sourceTree = "<group>"; };
@@ -101,8 +97,6 @@
 		243C1521155BD61900A88513 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		243C1525155BD9FE00A88513 /* JokesHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JokesHelper.h; sourceTree = "<group>"; };
 		243C1526155BD9FE00A88513 /* JokesHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JokesHelper.m; sourceTree = "<group>"; };
-		243C1528155BDA0F00A88513 /* DictionaryDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DictionaryDefines.h; sourceTree = "<group>"; };
-		243C1529155BDA0F00A88513 /* DictionaryDefines.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DictionaryDefines.m; sourceTree = "<group>"; };
 		243C152B155BDA4200A88513 /* FavoritesHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoritesHelper.h; sourceTree = "<group>"; };
 		243C152C155BDA4200A88513 /* FavoritesHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoritesHelper.m; sourceTree = "<group>"; };
 		243C152E155BDABD00A88513 /* Favorites.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Favorites.plist; path = ../../Favorites.plist; sourceTree = "<group>"; };
@@ -123,6 +117,7 @@
 		24E253681561A2B100DA4FD8 /* GTMNSString+HTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GTMNSString+HTML.m"; sourceTree = "<group>"; };
 		24E253691561A2B100DA4FD8 /* NSString+HTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+HTML.h"; sourceTree = "<group>"; };
 		24E2536A1561A2B100DA4FD8 /* NSString+HTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+HTML.m"; sourceTree = "<group>"; };
+		24E2536D1561BBAC00DA4FD8 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -250,8 +245,6 @@
 				243C1503155BD16000A88513 /* JokesViewController.m */,
 				243C1505155BD18100A88513 /* CustomTabBarController.h */,
 				243C1506155BD18100A88513 /* CustomTabBarController.m */,
-				243C1508155BD1CB00A88513 /* TempViewController.h */,
-				243C1509155BD1CB00A88513 /* TempViewController.m */,
 				243C150B155BD37500A88513 /* LoadingViewController.h */,
 				243C150C155BD37500A88513 /* LoadingViewController.m */,
 				243C1518155BD55800A88513 /* FavoritesViewController.h */,
@@ -280,8 +273,6 @@
 				243C152C155BDA4200A88513 /* FavoritesHelper.m */,
 				243C1525155BD9FE00A88513 /* JokesHelper.h */,
 				243C1526155BD9FE00A88513 /* JokesHelper.m */,
-				243C1528155BDA0F00A88513 /* DictionaryDefines.h */,
-				243C1529155BDA0F00A88513 /* DictionaryDefines.m */,
 			);
 			name = AdditionalControllers;
 			path = en.lproj/AdditionalControllers;
@@ -445,11 +436,9 @@
 				243C14FE155BD09600A88513 /* OfflineViewController.m in Sources */,
 				243C1504155BD16000A88513 /* JokesViewController.m in Sources */,
 				243C1507155BD18100A88513 /* CustomTabBarController.m in Sources */,
-				243C150A155BD1CB00A88513 /* TempViewController.m in Sources */,
 				243C150D155BD37600A88513 /* LoadingViewController.m in Sources */,
 				243C151A155BD55800A88513 /* FavoritesViewController.m in Sources */,
 				243C1527155BD9FE00A88513 /* JokesHelper.m in Sources */,
-				243C152A155BDA0F00A88513 /* DictionaryDefines.m in Sources */,
 				243C152D155BDA4200A88513 /* FavoritesHelper.m in Sources */,
 				243C1538155C061B00A88513 /* FavoritesCell.m in Sources */,
 				243C153B155C064300A88513 /* JokesCell.m in Sources */,
@@ -508,6 +497,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				243C1515155BD4FC00A88513 /* en */,
+				24E2536D1561BBAC00DA4FD8 /* ru */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -563,6 +553,7 @@
 		2420C7BE15530F0B00D93C0D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ChuckyFun/ChuckyFun-Prefix.pch";
 				INFOPLIST_FILE = "ChuckyFun/ChuckyFun-Info.plist";
@@ -574,6 +565,7 @@
 		2420C7BF15530F0B00D93C0D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ChuckyFun/ChuckyFun-Prefix.pch";
 				INFOPLIST_FILE = "ChuckyFun/ChuckyFun-Info.plist";

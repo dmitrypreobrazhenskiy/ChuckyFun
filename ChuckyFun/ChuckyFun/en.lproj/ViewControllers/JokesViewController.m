@@ -197,7 +197,7 @@
                 [self.jokesHelper initiateJokesDownload];
             }
         }
-
+        
     }
     
     else if (indexPath.row <= [self.tableViewArray count] -1) {

@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "DictionaryDefines.h"
+
 
 @interface JokesHelper : NSObject
 @property(nonatomic, strong) NSString *rootPath;
