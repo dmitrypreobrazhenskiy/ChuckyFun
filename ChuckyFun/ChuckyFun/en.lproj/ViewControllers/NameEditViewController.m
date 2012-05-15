@@ -34,7 +34,7 @@
 -(void)setPersonName:(NSMutableString *)personName {
     if (_personName != personName) {
         _personName = personName;
-        self.nameTextField.text = personName;
+        
     }
 }
 
@@ -86,6 +86,10 @@
 
 
 -(BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch {
+    
+    if ([[[touch.view class] description] isEqualToString:@"UIToolbarTextButton"]) {
+        return NO;
+    }
     if ([touch.view isKindOfClass:[UIButton class]]) {
         return NO;
     }
@@ -162,6 +166,18 @@
 - (void)viewDidLoad
 {
     
+    
+    if (self.personName != nil) {
+        if (![self.personName isEqualToString:@""]) {
+                self.nameTextField.text = self.personName;
+        }
+    }
+    
+    if (self.personFamilyName != nil) {
+        if (![self.personFamilyName isEqualToString:@""]) {
+            self.familyNameTextField.text = self.personFamilyName;
+        }
+    }
     self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"main_background.png"]];
     //Load the name View
     NSString *acceptString = NSLocalizedString(@"AcceptButtonTitle", @"The ok button title");
@@ -187,6 +203,7 @@
     NSArray *buttonArray = [NSArray arrayWithObjects:cancelBarButtonItem, flexibleWidth,acceptDateBarButtonItem, nil];
     [self.topToolbar setItems:buttonArray animated:NO];
     self.tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(removeTheKeyboard)];
+    self.tapGestureRecognizer.delegate = self;
     self.isMovableViewMoved = NO;
     //Finished loading the view
     [super viewDidLoad];

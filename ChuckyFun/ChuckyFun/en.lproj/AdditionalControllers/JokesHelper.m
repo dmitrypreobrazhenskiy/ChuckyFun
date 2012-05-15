@@ -92,6 +92,7 @@
 }
 
 -(void)initiateJokesDownloadWithPersonName:(NSString *)personName andPersonFamilyName:(NSString *)personFamilyName {
+    self.currentJokesDictionary = [NSMutableDictionary dictionaryWithContentsOfFile:self.plistPath];
     NSMutableString *connectionString =[NSMutableString stringWithString:@"http://api.icndb.com/jokes/random/10?firstName="];
     [connectionString appendString:personName];
     [connectionString appendString:@"&lastName="];

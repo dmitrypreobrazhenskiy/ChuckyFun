@@ -68,11 +68,8 @@
 
 -(void)loadMoreResults:(NSNotification *)notification {
     if ([notification.name isEqualToString:@"JokesParsed"]) {
-        NSMutableArray *currentTableViewArray = [NSMutableArray arrayWithArray:self.tableViewArray];
-        NSDictionary *loadedJokesDictionary = [NSDictionary dictionaryWithContentsOfFile:self.jokesHelper.plistPath];
-        NSMutableArray *loadedJokesArray = [loadedJokesDictionary objectForKey:@"value"];        
-        [currentTableViewArray addObjectsFromArray:loadedJokesArray];
-        self.tableViewArray = currentTableViewArray;
+        self.jokesDictionary = [NSMutableDictionary dictionaryWithContentsOfFile:self.jokesHelper.plistPath];
+        self.tableViewArray = [self.jokesDictionary objectForKey:@"value"];
         [self.spinnerObjet stopAndRemoveSpinnerForViewController:self];
         self.isRowSelected = NO;
         [self.mainTableView reloadData];
